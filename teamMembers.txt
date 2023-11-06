@@ -1,0 +1,3 @@
+###### We are a Team Of 3 full stack developers each one with a specific task and features ######
+
+Ayoub Benjaa     Soufiane Benseddiq     Mohamed Belalia
