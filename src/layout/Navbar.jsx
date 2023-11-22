@@ -8,7 +8,7 @@ const Navbar = () => {
     }
     return (
         <>
-            <div className='flex justify-between w-full items-center h-24 p-4'>
+            <div className='flex justify-between w-full items-center h-24 p-4 z-50'>
                 <h1 className='text-4xl font-bold w-auto hover:cursor-pointer'>REVOOM</h1>
                     <ul className='hidden custom-lg:flex justify-between large-width:w-[60%] w-[50%] items-center'>
                         <li className='text-[17px] font-semibold hover:cursor-pointer hover:ease-in-out duration-[350ms] hover:text-[22px]'>Demos</li>
@@ -23,7 +23,7 @@ const Navbar = () => {
                         <AiOutlineMenu size={25} className='text-black'/>
                     </div>
             </div>
-            <div className={!showNav?'fixed left-0 top-0 p-4 custom-lg:hidden justify-between w-[320px] bg-white  text-[#15162f] h-screen ease-in-out duration-700':'fixed left-[-100%]'}>
+            <div className={!showNav?'fixed left-[0] z-50 top-0 p-4 custom-lg:hidden justify-between w-[320px] bg-white  text-[#15162f] h-screen ease-in-out duration-700':'fixed left-[-100%] z-50 ease-in-out duration-1000 top-0 h-screen w-[320px]'}>
                 <div className='flex justify-between items-center'>
                     <h1 className='text-4xl font-bold hover:cursor-pointer'>REVOOM</h1>
                     <AiOutlineClose size={25} onClick={handleNav} className='hover:cursor-pointer'/>

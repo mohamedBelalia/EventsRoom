@@ -1,0 +1,38 @@
+{
+    "reviews": [
+      {
+        "name": "Sarah Smith",
+        "text": "I love this events website! It's so user-friendly and has helped me discover amazing events in my city. The event recommendations are spot on, and the ticket booking process is a breeze"
+      },
+      {
+        "name": "John Anderson",
+        "text": "EventHub is my go-to platform for finding events. I've attended concerts, sports games, and art exhibitions, all thanks to their easy-to-navigate website. Highly recommended"
+      },
+      {
+        "name": "Emily Parker",
+        "text": "I can't thank EventSeeker enough for helping me plan my sister's bachelorette party. We found the perfect spa day and nightlife events all in one place. It made our weekend unforgettable!"
+      },
+      {
+        "name": "David Lee",
+        "text": "I've been using EventSpot for years, and it keeps getting better. It's great for both big events and local happenings. The event descriptions are detailed, and the reviews from other users are invaluable"
+      },
+      {
+        "name": "Jessica Taylor",
+        "text": "EventRadar has revolutionized the way I explore my city. The app is intuitive, and I love how it tailors event suggestions based on my interests. It's like having a personal event concierge!"
+      },
+      {
+        "name": "Michael Johnson",
+        "text": "As an event organizer, I rely on EventPlanner for promoting my events. Their platform is robust, and the exposure my events get is fantastic. The support team is also very responsive"
+      },
+      {
+        "name": "Lisa Brown",
+        "text": "EventSage is a game-changer for finding family-friendly events. It helped me plan a fun-filled summer for my kids. I appreciate the filters that allow me to search by age group"
+      },
+      {
+        "name": "Robert Wilson",
+        "text": "EventMaster is a must-have for anyone who enjoys attending live shows and performances. The website is well-organized, and I've never had any issues purchasing tickets. Kudos to the team!"
+      }
+      
+    ]
+  }
+  
