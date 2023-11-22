@@ -1,11 +1,12 @@
-
+import { Home } from "./Pages/Home/Home";
 import Pages from "./Pages/Pages";
 
 function App() {
   return (
-    <>
-      <Pages/>
-    </>
+    <div>
+        <Pages/>
+        <Home/>
+    </div>
   );
 }
 
