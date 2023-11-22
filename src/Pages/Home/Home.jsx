@@ -2,6 +2,7 @@ import React from 'react'
 import LastEvents from './LastEvents'
 import AppointmentBox from './AppointmentBox'
 import Reviews from './Reviews'
+import Developers from './Developers'
 
 export const Home = () => {
   return (
@@ -9,6 +10,7 @@ export const Home = () => {
         <LastEvents/>  
         <AppointmentBox/>
         <Reviews/>
+        <Developers/>
     </div>
   )
 }
