@@ -17,9 +17,6 @@ module.exports = {
       '2-lines': '2',
     },
   },
-  plugins: [
-    require('tailwind-scrollbar'),
-  ],
   }
 }
 

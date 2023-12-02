@@ -3,10 +3,9 @@ import { Fade, Slide, Zoom } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import img1 from "./images/1.jpg";
-import img2 from "./images/2.jpg";
-import img3 from "./images/3.jpg";
-
+import img1 from "./LandingImages/1.jpg"
+import img2 from "./LandingImages/2.jpg"
+import img3 from "./LandingImages/3.jpg"
 
   
 const slideImages = [
@@ -56,7 +55,7 @@ function DataOfLanding () {
    
 
   return (
-    <div className='slide-container '>
+    <div className='slide-container'>
       <Fade>
         {slideImages.map((image, index)=>{
           return <div key={index} className=''>

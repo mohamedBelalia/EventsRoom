@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
         <Navbar/>
-        <Pages/>
+        {/* <Pages/> */}
         <Home/>
         <Footer/>
     </div>

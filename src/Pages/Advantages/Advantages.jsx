@@ -9,7 +9,7 @@ const Advantages = () => {
   useEffect(()=>{Aos.init()},[]);
   return (
     <div className=''>
-      <div className='-my-40 pt-60  pb-10 md:flex lg:flex px-10 ' style={{background:"#f2f3f5"}}>
+      <div className='-my-40 pt-60  pb-10 md:flex lg:flex md:px-0 px-10 ' style={{background:"#f2f3f5"}}>
       <img className='lg:w-2/5  md:w-2/5 md:h-2/5 w-3/5 mb-10 mr-10' src={img} alt="" />
       <div >
                 <h1 className='font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500'  data-aos="fade-up">ADVANTAGES</h1>

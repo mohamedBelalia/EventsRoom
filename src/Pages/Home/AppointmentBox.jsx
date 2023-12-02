@@ -35,12 +35,12 @@ const AppointmentBox = () => {
          <div className='max-w-[100vw] md:h-[200px] h-[300px] bg-gradient-to-r from-[#af71ff] to-[#48b2ff]'>
 
             <div className='mx-auto md:max-w-[1190px] h-full flex md:flex-row flex-col md:justify-between justify-around items-center '>
-                <div>
-                    <h1 className='text-center mx-auto text-4xl md:w-full w-[80%] font-semibold text-white mb-6'>Don't Wait, Book Now</h1>
+                <div data-aos="fade-up">
+                    <h1  className='text-center mx-auto text-4xl md:w-full w-[80%] font-semibold text-white mb-6'>Don't Wait, Book Now</h1>
                     <p className='md:text-left text-center md:text-xl text-white'>Plan your budget and let’s get started.</p>
                 </div>
                 <div>
-                <button className='w-[220px] h-[50px] text-lg font-medium bg-white rounded-full transition-all duration-300 ease-in hover:bg-transparent hover:text-white hover:border-2 border-white'>
+                <button data-aos="fade-up" className='w-[220px] h-[50px] text-lg font-medium bg-white rounded-full transition-all duration-300 ease-in hover:bg-transparent hover:text-white hover:border-2 border-white'>
                     Budget Calculator
                 </button>
                 </div>
