@@ -43,7 +43,7 @@ const LastEvents = () => {
                         <p>699 Dh</p>
                       </div>
                       <div>
-                        <p className='text-white font-bold'>FAMILY</p>
+                        <p className='text-white font-bold'>FAMILY Breaking bad</p>
                         <h1 className='text-white font-semibold text-2xl'>{eventInfo.eventName}</h1>
                       </div>
                   </div>
