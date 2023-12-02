@@ -30,7 +30,7 @@ const LastEvents = () => {
     <div className='mx-auto mt-[100px] max-w-[1340px] md:px-6 lg:px-20 3xl:px-0'>
         <h1 className='mb-2 max-w-screen-custom-lg text-blue-950 text-4xl font-medium px-10 md:px-0'>Lastest Events</h1>
         <div ref={eventsCards} className='py-10 scroll-smooth flex overflow-x-auto mx-4 large-width:mx-0 scrollbar-hide' data-aos="fade-up">
-          {/* scrollbar-none : to hidde the the scrollbar we used for this "npm i tailwind-scrollbar" */}
+          {/* scrollbar-none => to hidde the the scrollbar we used for this "npm i tailwind-scrollbar" */}
           {/* here we map on the data that we got from the db to create for each collection of data a card */}
           {
             eventsData.eventsData.map((eventInfo , key)=>( 
