@@ -23,7 +23,7 @@ const LastEvents = () => {
   return (
     <div className='my-8 max-w-[1150px] m-auto '>
         <h1 className='mb-6 text-blue-950 text-4xl font-medium px-4 large-width:px-2'>Lastest Events</h1>
-        <div ref={eventsCards} className='py-10 scroll-smooth flex overflow-x-auto mx-4 large-width:mx-2 scrollbar-hide'>
+        <div ref={eventsCards} className='py-10 scroll-smooth flex overflow-x-auto mx-4 large-width:mx-2 bg-red-500 scrollbar-hide'>
           {/* scrollbar-none : to hidde the the scrollbar we used for this "npm i tailwind-scrollbar" */}
           {/* here we map on the data that we got from the db to create for each collection of data a card */}
           {
