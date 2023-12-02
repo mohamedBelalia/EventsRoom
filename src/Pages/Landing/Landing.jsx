@@ -46,7 +46,6 @@ const divStyle = {
 
 const spanStyle = {
   background: '#efefef',
- 
 }
 
 

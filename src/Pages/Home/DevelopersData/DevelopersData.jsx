@@ -15,7 +15,7 @@ const Ayoub = {
     text:'"As a worker in this event company, I appreciate the emphasis placed on creativity and innovation. It allows us to constantly push the boundaries and deliver unique and unforgettable experiences for our clients."'
 }
 const Mohammed = {
-    name:'Mohammed Bellalia',
+    name:'Mohammed Belalia',
     role:'Manager & FS Developer',
     img:MLogo,
     text:'"Working in this event company has allowed me to expand my skill set and take on new challenges. The diverse range of projects keeps things exciting, and the continuous learning opportunities ensure that I\'m always growing as a professional."'

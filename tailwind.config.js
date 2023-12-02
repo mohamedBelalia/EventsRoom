@@ -18,7 +18,20 @@ module.exports = {
     },
   },
   plugins: [
-    require('tailwind-scrollbar'),
+
+    function ({addUtilies}){
+      const newUtilities = {
+        ".scrollbar-hide::-webkit-scrollbar" : {
+          display : "none"
+        },
+        ".scrollbar-hide":{
+          "-ms-overflow-style" : "none",
+          "scrollbar-width" : "none"
+        }
+      }
+      addUtilies(newUtilities)
+    }
+
   ],
   }
 }
