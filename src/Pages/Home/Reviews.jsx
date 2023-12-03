@@ -26,7 +26,7 @@ const Reviews = () => {
     <div className='my-20 mb-16 md:pl-4 px-4 mx-w-[1160px]'>
         
             <div data-aos="fade-up" className='md:w-[80%] mx-auto mb-[50px]'>
-                <p className='text-[#af71ff] tracking-[5px] text-[14px] font-semibold'>OUR CUSTOMERS</p>
+                <p className='text-[#af71ff]  tracking-[5px] text-[14px] font-semibold'>OUR CUSTOMERS</p>
                 <h1 className='text-[40px] font-semibold mt-2 text-[#0a0041]'>Testimonials</h1>
                 <div className='flex justify-between items-center'>
                     <p className='md:w-1/2 text-[#7881a1] text-[19px] my-6'>

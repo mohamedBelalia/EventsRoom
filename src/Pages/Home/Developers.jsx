@@ -37,7 +37,7 @@ const Developers = () => {
                 <div className='w-full flex justify-between flex-col custom-lg:flex-row items-center custom-lg:h-fit'>
                     {/**list div */}
                     <div data-aos="fade-up" className='flex flex-col w-full custom-lg:w-[40%] custom-lg:h-[300px] h-fit justify-between'>
-                        <div id='Mohamed' onClick={()=>showMember(1)} className={mohammed===1?'relative bg-gray-[A6A6A4] shadow-lg bg-gradient-to-r from-pink-500 to-blue-500 text-white left-4 pr-[-20px] ease-in-out duration-700 hover:cursor-pointer': 'relative bg-white  shadow-lg custom-lg:h-[30%] ease-in-out duration-700 hover:cursor-pointer'}>
+                        <div id='Mohamed' onClick={()=>showMember(1)} className={mohammed===1?'relative bg-gray-[A6A6A4] shadow-lg bg-gradient-to-r from-purple-400 via-indigo-400 to-cyan-500 text-white left-4 pr-[-20px] ease-in-out duration-700 hover:cursor-pointer': 'relative bg-white  shadow-lg custom-lg:h-[30%] ease-in-out duration-700 hover:cursor-pointer'}>
                             <div className='flex flex-row m-5 justify-start bg-[ima] hover:cursor-pointer'>
                                 <img src={MLogo} alt='Mohammed' className='w-[13%] rounded-[50%] bg-blue-200'/>
                                 <div className='flex flex-col w-[70%] justify-center  ml-6'>
@@ -46,7 +46,7 @@ const Developers = () => {
                                 </div>
                             </div>
                         </div>
-                        <div id='Ayoub' onClick={()=>showMember(2)} className={ayoub===2?'relative bg-white shadow-lg bg-gradient-to-r from-pink-500 to-blue-500 text-white left-4 ease-in-out duration-700 hover:cursor-pointer':'relative bg-white shadow-lg custom-lg:h-[30%] ease-in-out duration-700 hover:cursor-pointer'}>
+                        <div id='Ayoub' onClick={()=>showMember(2)} className={ayoub===2?'relative bg-white shadow-lg bg-gradient-to-r from-purple-400 via-indigo-400 to-cyan-500 text-white left-4 ease-in-out duration-700 hover:cursor-pointer':'relative bg-white shadow-lg custom-lg:h-[30%] ease-in-out duration-700 hover:cursor-pointer'}>
                             <div className='flex flex-row m-5 justify-start hover:cursor-pointer'>
                                 <img src={ALogo} alt='' className='w-[13%] rounded-[50%] bg-blue-200'/>
                                 <div className='flex flex-col w-[70%] justify-center ml-6'>
@@ -55,7 +55,7 @@ const Developers = () => {
                                 </div>
                             </div>
                         </div>
-                        <div id='Soufiane' onClick={()=>showMember(3)} className={soufiane===3?'relative bg-white shadow-lg bg-gradient-to-r from-pink-500 to-blue-500 text-white left-4 ease-in-out duration-700 hover:cursor-pointer':'relative bg-white shadow-lg custom-lg:h-[30%] ease-in-out duration-700 hover:cursor-pointer'}>
+                        <div id='Soufiane' onClick={()=>showMember(3)} className={soufiane===3?'relative bg-white shadow-lg bg-gradient-to-r from-purple-400 via-indigo-400 to-cyan-500 text-white left-4 ease-in-out duration-700 hover:cursor-pointer':'relative bg-white shadow-lg custom-lg:h-[30%] ease-in-out duration-700 hover:cursor-pointer'}>
                             <div className='flex flex-row m-5 justify-start'>
                                 <img src={SLogo} alt='' className='w-[13%] rounded-[50%] bg-blue-200'/>
                                 <div className='flex flex-col w-[70%] justify-center ml-6'>
