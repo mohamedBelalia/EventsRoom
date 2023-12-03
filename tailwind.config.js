@@ -17,22 +17,6 @@ module.exports = {
       '2-lines': '2',
     },
   },
-  plugins: [
-
-    function ({addUtilies}){
-      const newUtilities = {
-        ".scrollbar-hide::-webkit-scrollbar" : {
-          display : "none"
-        },
-        ".scrollbar-hide":{
-          "-ms-overflow-style" : "none",
-          "scrollbar-width" : "none"
-        }
-      }
-      addUtilies(newUtilities)
-    }
-
-  ],
   }
 }
 

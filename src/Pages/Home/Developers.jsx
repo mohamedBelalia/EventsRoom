@@ -1,10 +1,18 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {RiLinkedinBoxLine, RiInstagramLine} from "react-icons/ri";
 import DevelopersD from '../../insteadDatabase/json_files/DevelopersData.json';
 import MLogo from './DevelopersData/M.png';
 import SLogo from './DevelopersData/S.png';
 import ALogo from './DevelopersData/A.png';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 const Developers = () => {
+
+    useEffect(()=>{
+        Aos.init();
+    },[])
+
+
     const [mohammed,setMohammed]=useState(1)
     const [ayoub,setAyoub]=useState(0)
     const [soufiane,setSoufiane]=useState(0)
@@ -23,13 +31,13 @@ const Developers = () => {
     return (
         //central div
         <div className='flex flex-col max-w-[1150px] custom-lg:mx-auto items-center justify-center custom-lg:my-0 mx-4 custom-lg:h-[600px] h-fit '>
-                <p className='mb-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-600 to-cyan-500'> MEET THE TEAM</p>
-                <h2 className='custom-lg:mb-14 mb-5 text-4xl font-semibold text-blue-950'>Our Creative Team</h2>
+                <p data-aos="fade-up" className='mb-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-600 to-cyan-500'> MEET THE TEAM</p>
+                <h2 data-aos="fade-up" className='custom-lg:mb-14 mb-5 text-4xl font-semibold text-blue-950'>Our Creative Team</h2>
                 {/** after h2 div */}   
                 <div className='w-full flex justify-between flex-col custom-lg:flex-row items-center custom-lg:h-fit'>
                     {/**list div */}
-                    <div className='flex flex-col w-full custom-lg:w-[40%] custom-lg:h-[300px] h-fit justify-between'>
-                        <div id='Mohamed' onClick={()=>showMember(1)} className={mohammed===1?'relative bg-gray-[A6A6A4] shadow-lg bg-gradient-to-r from-pink-500 to-blue-500 text-white left-4 pr-[-20px] ease-in-out duration-700 hover:cursor-pointer': 'relative bg-white  shadow-lg custom-lg:h-[30%] ease-in-out duration-700 hover:cursor-pointer'}>
+                    <div data-aos="fade-up" className='flex flex-col w-full custom-lg:w-[40%] custom-lg:h-[300px] h-fit justify-between'>
+                        <div id='Mohamed' onClick={()=>showMember(1)} className={mohammed===1?'relative bg-gray-[A6A6A4] shadow-lg bg-gradient-to-r from-purple-400 via-indigo-400 to-cyan-500 text-white left-4 pr-[-20px] ease-in-out duration-700 hover:cursor-pointer': 'relative bg-white  shadow-lg custom-lg:h-[30%] ease-in-out duration-700 hover:cursor-pointer'}>
                             <div className='flex flex-row m-5 justify-start bg-[ima] hover:cursor-pointer'>
                                 <img src={MLogo} alt='Mohammed' className='w-[13%] rounded-[50%] bg-blue-200'/>
                                 <div className='flex flex-col w-[70%] justify-center  ml-6'>
@@ -38,7 +46,7 @@ const Developers = () => {
                                 </div>
                             </div>
                         </div>
-                        <div id='Ayoub' onClick={()=>showMember(2)} className={ayoub===2?'relative bg-white shadow-lg bg-gradient-to-r from-pink-500 to-blue-500 text-white left-4 ease-in-out duration-700 hover:cursor-pointer':'relative bg-white shadow-lg custom-lg:h-[30%] ease-in-out duration-700 hover:cursor-pointer'}>
+                        <div id='Ayoub' onClick={()=>showMember(2)} className={ayoub===2?'relative bg-white shadow-lg bg-gradient-to-r from-purple-400 via-indigo-400 to-cyan-500 text-white left-4 ease-in-out duration-700 hover:cursor-pointer':'relative bg-white shadow-lg custom-lg:h-[30%] ease-in-out duration-700 hover:cursor-pointer'}>
                             <div className='flex flex-row m-5 justify-start hover:cursor-pointer'>
                                 <img src={ALogo} alt='' className='w-[13%] rounded-[50%] bg-blue-200'/>
                                 <div className='flex flex-col w-[70%] justify-center ml-6'>
@@ -47,7 +55,7 @@ const Developers = () => {
                                 </div>
                             </div>
                         </div>
-                        <div id='Soufiane' onClick={()=>showMember(3)} className={soufiane===3?'relative bg-white shadow-lg bg-gradient-to-r from-pink-500 to-blue-500 text-white left-4 ease-in-out duration-700 hover:cursor-pointer':'relative bg-white shadow-lg custom-lg:h-[30%] ease-in-out duration-700 hover:cursor-pointer'}>
+                        <div id='Soufiane' onClick={()=>showMember(3)} className={soufiane===3?'relative bg-white shadow-lg bg-gradient-to-r from-purple-400 via-indigo-400 to-cyan-500 text-white left-4 ease-in-out duration-700 hover:cursor-pointer':'relative bg-white shadow-lg custom-lg:h-[30%] ease-in-out duration-700 hover:cursor-pointer'}>
                             <div className='flex flex-row m-5 justify-start'>
                                 <img src={SLogo} alt='' className='w-[13%] rounded-[50%] bg-blue-200'/>
                                 <div className='flex flex-col w-[70%] justify-center ml-6'>
@@ -58,7 +66,7 @@ const Developers = () => {
                         </div>
                     </div>
                         {/**current div */}
-                        <div className='custom-lg:w-[50%] sm:w-[90%] custom-lg:h-[80%] custom-lg:mt-0 custom-lg:mx-0 sm:mx-4 mt-10 h-fit flex flex-col justify-between '>
+                        <div data-aos="fade-up" className='custom-lg:w-[50%] sm:w-[90%] custom-lg:h-[80%] custom-lg:mt-0 custom-lg:mx-0 sm:mx-4 mt-10 h-fit flex flex-col justify-between '>
                             <div className='h-[50%] flex sm:flex-row flex-col sm:text-left text-center justify-between items-center '>
                                 <img alt='' src={mohammed===1?MLogo:ayoub===2?ALogo:SLogo} className='custom-lg:w-[25%] custom-lg:max-h-[135px]  max-h-[125px] rounded-[50%] bg-blue-200'/>
                                 <div className='h-[75%] sm:w-[70%] w-full flex flex-col justify-between'>

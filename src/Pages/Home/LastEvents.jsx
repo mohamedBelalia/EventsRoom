@@ -1,12 +1,18 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import eventsData from "../../insteadDatabase/json_files/LastEventsData.json"
 import {HiChevronLeft, HiChevronRight} from "react-icons/hi";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 
 const screenWidth = 400 ;
 const LastEvents = () => {
 
     /* to handle the UI with real data we created a json file with fake data */
+
+    useEffect(()=>{
+      Aos.init();
+  },[])
 
     const eventsCards = useRef();
 
@@ -21,10 +27,11 @@ const LastEvents = () => {
 
 
   return (
-    <div className='my-8 max-w-[1150px] m-auto '>
-        <h1 className='mb-6 text-blue-950 text-4xl font-medium px-4 large-width:px-2'>Lastest Events</h1>
-        <div ref={eventsCards} className='py-10 scroll-smooth flex overflow-x-auto mx-4 large-width:mx-2 bg-red-500 scrollbar-hide'>
-          {/* scrollbar-none : to hidde the the scrollbar we used for this "npm i tailwind-scrollbar" */}
+
+    <div className='mx-auto mt-[100px] max-w-[1340px] md:px-6 lg:px-20 3xl:px-0'>
+        <h1 className='mb-2 max-w-screen-custom-lg text-blue-950 text-4xl font-medium px-10 md:px-0'>Lastest Events</h1>
+        <div ref={eventsCards} className='py-10 scroll-smooth flex overflow-x-auto mx-4 large-width:mx-0 scrollbar-hide' data-aos="fade-up">
+          {/* scrollbar-none => to hidde the the scrollbar*/}
           {/* here we map on the data that we got from the db to create for each collection of data a card */}
           {
             eventsData.eventsData.map((eventInfo , key)=>( 
@@ -37,7 +44,7 @@ const LastEvents = () => {
                         <p>699 Dh</p>
                       </div>
                       <div>
-                        <p className='text-white font-bold'>FAMILY</p>
+                        <p className='text-white font-bold'>FAMILY Breaking bad</p>
                         <h1 className='text-white font-semibold text-2xl'>{eventInfo.eventName}</h1>
                       </div>
                   </div>

@@ -7,8 +7,8 @@ const Navbar = () => {
         setShowNav(!showNav)
     }
     return (
-        <header className='max-w-[1150px] m-auto '>
-            <div className='flex justify-between w-full items-center h-24 p-4 large-width:px-4'>
+        <header className='max-w-[1150px] m-auto mx-auto'>
+            <div className='text-white max-w-[1340px] md:px-6  absolute z-50 top-0 left-0 flex justify-between w-full items-center h-24 p-4 large-width:px-4'>
                 <h1 className='text-4xl font-bold w-auto hover:cursor-pointer'>REVOOM</h1>
                 <ul className='hidden custom-lg:flex justify-between large-width:w-[60%] w-[50%] items-center'>
                     <li className='text-[17px] font-semibold hover:cursor-pointer hover:ease-in-out duration-[350ms] hover:text-[22px]'>Demos</li>
@@ -18,7 +18,7 @@ const Navbar = () => {
                     <li className='text-[17px] font-semibold hover:cursor-pointer hover:ease-in-out duration-[350ms] hover:text-[22px]'>Shop</li>
                     <li className='text-[17px] font-semibold hover:cursor-pointer hover:ease-in-out duration-[350ms] hover:text-[22px]'>All Pages</li>
                 </ul>
-                <button className='text-[20px] hidden custom-lg:block border border-black w-[176px] h-[50px] rounded-[30px] hover:bg-gray-500 hover:bg-opacity-50 hover:ease-in-out duration-[500ms]'>Get In Touch</button>
+                <button className='text-[20px] border-2 border-white hidden custom-lg:block w-[176px] h-[50px] rounded-[30px] hover:bg-gray-500 hover:bg-opacity-50 hover:ease-in-out duration-[500ms]'>Get In Touch</button>
                 <div onClick={handleNav} className='flex custom-lg:hidden hover:cursor-pointer'>
                     <AiOutlineMenu size={25} color='black'/>
                 </div>

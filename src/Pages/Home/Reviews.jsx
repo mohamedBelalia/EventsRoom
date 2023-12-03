@@ -1,11 +1,17 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { GrStar } from "react-icons/gr"
 import reviewsData from "../../insteadDatabase/json_files/ReviewsData.json"
 import { BsChevronLeft , BsChevronBarRight, BsChevronRight  } from "react-icons/bs"
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 
 const screenWidth = 350 ;
 const Reviews = () => {
+
+    useEffect(()=>{
+        Aos.init();
+    },[])
 
     const reviewsRight = (element) =>{
         element.scrollLeft += screenWidth
@@ -17,11 +23,10 @@ const Reviews = () => {
     const reviewsCards = useRef();
 
   return (
-    <div className='my-20 mb-16 md:pl-4 px-4 mx-w-[1190px]'>
-
+    <div className='my-20 mb-16 md:pl-4 px-4 mx-w-[1160px]'>
         
-            <div className='md:w-[80%] mx-auto mb-[50px]'>
-                <p className='text-[#af71ff] tracking-[5px] text-[14px] font-semibold'>OUR CUSTOMERS</p>
+            <div data-aos="fade-up" className='md:w-[80%] mx-auto mb-[50px]'>
+                <p className='text-[#af71ff]  tracking-[5px] text-[14px] font-semibold'>OUR CUSTOMERS</p>
                 <h1 className='text-[40px] font-semibold mt-2 text-[#0a0041]'>Testimonials</h1>
                 <div className='flex justify-between items-center'>
                     <p className='md:w-1/2 text-[#7881a1] text-[19px] my-6'>
@@ -36,7 +41,7 @@ const Reviews = () => {
             </div>
 
         <div className='w-full flex md:justify-end items-center'>
-            <div ref={reviewsCards} className="md:w-[90%] w-full flex scroll-smooth overflow-x-auto scrollbar-none mb-10 md:mb-[100px]">
+            <div data-aos="fade-up" ref={reviewsCards} className="md:w-[90%] w-full flex scroll-smooth overflow-x-auto scrollbar-hide mb-5">
 
             {
                 reviewsData.reviews.map((review , key)=>(

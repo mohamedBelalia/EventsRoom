@@ -13,8 +13,8 @@ const About = () => {
     
   return (
     
-    <div className=''>
-          <div className='flex px-10 pt-32  flex-col'  >
+    <div className='mx-auto max-w-[1340px] md:px-6 lg:px-20 3xl:px-0'>
+          <div className='flex md:px-0 px-10 pt-32  flex-col'  >
         
             <div className='mb-3 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500'  data-aos="fade-up">ABOUT US</div>
             <span className='md:text-3xl sm:text-2xl lg:text-4xl font-semibold'  data-aos="fade-up">We customize our event services to meet your individual needs, guaranteeing comprehensive management of every detail from the beginning till the end of your event.</span>
@@ -25,7 +25,7 @@ const About = () => {
 
 
 
-            <div className='lg:flex md:grid md:grid-cols-2 gap-6 font-semibold ' >
+            <div className=' lg:flex md:grid md:grid-cols-2 gap-6 font-semibold ' >
                 {DataOfAbout.map((e,index)=>{
                   return( 
                         <div key={index} className=' bg-white  my-5 shadow-lg py-10 p-10 pr-22' data-aos="fade-up"  >
